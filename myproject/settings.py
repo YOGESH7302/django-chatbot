@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['django-chatbot-u8p5.onrender.com', '127.0.0.1', 'localhost']
 
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -73,11 +74,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "docs")],  # ✅ THIS points to the docs folder
+        'DIRS': [os.path.join(BASE_DIR, "templates")],  
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                # keep default processors
+               
             ],
         },
     },
